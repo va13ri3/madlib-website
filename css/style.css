@@ -101,10 +101,15 @@ form {
   box-shadow: 5px 5px 0 0 #000;
 }
 
+.col-6 {
+    /* flex: 0 0 auto; */
+    width: 100%;
+}
+
 .input__container::before {
   content: "MADLIB GENERATOR";
   position: absolute;
-  top: -15px;
+  top: 95px;
   left: 20px;
   background: #e9b50b;
   color: #000;
@@ -122,8 +127,16 @@ form {
   font-family: monospace;
 }
 
+.right {
+  margin-left: 170px;
+}
+
+.r {
+  margin-left: 170px;
+}
+
 .brutalist-input {
-  width: 500px;
+  width: 250px;
   padding: 15px;
   font-size: 18px;
   font-weight: bold;
@@ -131,7 +144,7 @@ form {
   background-color: #fff;
   border: 4px solid #000;
   position: relative;
-  /* overflow: hidden; */
+  overflow:scroll;
   border-radius: 0;
   outline: none;
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
@@ -189,6 +202,7 @@ form {
 }
 
 button {
+  position: relative;
   margin-left: 100px;
 }
 
@@ -240,6 +254,10 @@ button {
   transform: rotate(-1deg);
   z-index: 1;
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.long {
+  padding: 5px 10px;
 }
 
 .brutalist-input:focus + .brutalist-label {
@@ -300,6 +318,12 @@ button {
   50% {
     border-color: #4a90e2;
   }
+}
+
+input {
+    position: relative;
+    z-index: 10;
+    pointer-events: auto;
 }
 
 .my-element {

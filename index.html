@@ -15,53 +15,82 @@
   <form id="madlibForm">
     <div class="brutalist-container my-element animate__animated animate__slideInRight">
     <div class="row">
-<div class="col-12">
-    <label class=" brutalist-label">Adjective:</label>
-    <input type="text" class="brutalist-input smooth-type" id="adjective" placeholder="Type an adjective"><br>
+
+<div class="col-6">
+    <label class=" brutalist-label"><span>Sound:</span></label>
+    <input type="text" class="brutalist-input smooth-type" id="sound" placeholder="Type a sound"><br>
 </div>
-<div class="col-12">
-    <label class="brutalist-label">Two word Adjective:</label>
-    <input type="text" class="brutalist-input smooth-type" id="two" placeholder="Ex: glitter-covered"><br>
+<div class="col-6">
+    <label class="r long brutalist-label"><span>Two-word Adjective:</span></label>
+    <input type="text" class="right brutalist-input smooth-type" id="two" placeholder="Ex: glitter-covered"><br>
 </div>
-<div class="col-12">
-    <label class="3 brutalist-label">Animal/creature:</label>
+<div class="col-6">
+    <label class="brutalist-label"><span>Animal/Creature:</span></label>
     <input type="text" class="brutalist-input smooth-type" id="animal" placeholder="Type an animal or creature"><br>
 </div>
-<div class="col-12">
-    <label class="4 brutalist-label">Adjective:</label>
-    <input type="text" class="brutalist-input smooth-type" id="adjective2" placeholder="Type an adjective"><br>
+<div class="col-6">
+    <label class="r brutalist-label"><span>Adjective:</span></label>
+    <input type="text" class="right brutalist-input smooth-type" id="adjective2" placeholder="Type an adjective"><br>
 </div>
-<div class="col-12">
-    <label class="5 brutalist-label">Object:</label>
+<div class="col-6">
+    <label class="brutalist-label"><span>Object:</span></label>
     <input type="text" class="brutalist-input smooth-type" id="object" placeholder="Type an object"><br>
 </div>
-<div class="col-12">
-    <label class="6 brutalist-label">Verb:</label>
-    <input type="text" class="brutalist-input smooth-type" id="verb" placeholder="Type a verb"><br>
+<div class="col-6">
+    <label class="r brutalist-label"><span>Verb:</span></label>
+    <input type="text" class="right brutalist-input smooth-type" id="verb" placeholder="Type a verb"><br>
 </div>
-<div class="col-12"> 
-    <label class="7 brutalist-label">Object:</label>
-    <input type="text" class="brutalist-input smooth-type" id="object2" placeholder="Type an object"><br>
+<div class="col-6"> 
+    <label class="brutalist-label"><span>Object:</span></label>
+    <input type="text" class="brutalist-input smooth-type" id="object2" placeholder="Type an object with -s at the end"><br>
 </div>
-<div class="col-12">
-    <label class="8 brutalist-label">Object:</label>
+<div class="col-6">
+    <label class="r brutalist-label"><span>Verb:</span></label>
+    <input type="text" class="right brutalist-input smooth-type" id="verb2" placeholder="Type an verb"><br>
+</div>
+<div class="col-6">
+    <label class="brutalist-label"><span>Object:</span></label>
     <input type="text" class="brutalist-input smooth-type" id="object3" placeholder="Type an object"><br>
 </div>
-<div class="col-12">
-    <label class="9 brutalist-label">Adjective:</label>
-    <input type="text" class="brutalist-input smooth-type" id="adjective3" placeholder="Type an adjective"><br>
+<div class="col-6">
+    <label class="r brutalist-label"><span>Sound:</span></label>
+    <input type="text" class="right brutalist-input smooth-type" id="sound2" placeholder="Type an sound with -ing at the end"><br>
 </div>
-<div class="col-12"> 
-    <label class="10 brutalist-label">Object:</label>
+<div class="col-6">
+    <label class="r brutalist-label"><span>Adjective:</span></label>
+    <input type="text" class="right brutalist-input smooth-type" id="adjective3" placeholder="Type an adjective"><br>
+</div>
+<div class="col-6"> 
+    <label class="brutalist-label"><span>Object:</span></label>
     <input type="text" class="brutalist-input smooth-type" id="object4" placeholder="Type an object"><br>
 </div>
-<div class="col-12">
-    <button type="button" id="submitBtn" class="input__button__shadow">Create Madlib</button>
+<div class="col-span">
+    <button class="input__button__shadow">
+        <span class="box">
+            Madlib
+        </span> 
+    </button>
+    <div>
+        <p id="story-screen">
+         It was a whimsical afternoon when the sky above Pickleberry Park suddenly split open with a loud <span class="userInput">Sound</span>. Out dropped a <span class="userInput">Two-word Adjective</span> <span class="userInput">Animal/Creature</span> holding a <span class="userInput">Adjective</span> <span class="userInput">Object</span> like it was on a mission.
+
+The <span class="userInput">Animal/Creature</span> marched up to the nearest snack cart, pointed dramatically, and shouted,
+“Quit <span class="userInput">Verb</span>, the universe demands <span class="userInput">Object</span>!”
+
+Before anyone could respond, the ground began to <span class="userInput">Verb</span>. A massive <span class="userInput">Object</span>, at least the size of a school bus—rolled into the park, <span class="userInput">Sound</span> with the intensity of a thousand microwaves. People scattered while the wombat hopped heroically toward it.
+
+“Stand back!” it cried, bouncing higher and higher. With one mighty leap, the wombat bonked the duck right on its beak. The duck squeaked, deflated like a whoopee cushion, and vanished in a puff of confetti.
+
+Everyone cheered. The <span class="userInput">Animal/Creature</span> bowed.
+Then it stole a <span class="userInput">Object</span> and disappeared into a <span class="userInput">Object</span> shaped like a <span class="userInput">Adjective</span> <span class="userInput">Object</span>.
+
+Just another day at Pickleberry Park. </p>
     </div>
+    </div>
+</div>
 </div>
   </form>
   </div>
-</div>
 
   <h2>Your Madlib:</h2>
   <p id="output"></p>
@@ -82,7 +111,6 @@ Then it stole a churro and disappeared into a portal shaped like a disappointed 
 
 Just another day at Pickleberry Park. -->
 
-</div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
 </body>
